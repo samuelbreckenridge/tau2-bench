@@ -33,7 +33,7 @@ from tau2.voice.audio_native.tick_result import (
 )
 
 if TYPE_CHECKING:
-    from tau2.voice.audio_native.openai.live_config import LiveConfig
+    from tau2.data_model.live_config import LiveConfig
 
 
 class DiscreteTimeAdapter(ABC):

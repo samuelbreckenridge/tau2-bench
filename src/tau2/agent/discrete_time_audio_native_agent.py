@@ -64,6 +64,7 @@ from tau2.config import (
     DEFAULT_SEND_AUDIO_INSTANT,
 )
 from tau2.data_model.audio import TELEPHONY_AUDIO_FORMAT, AudioEncoding, AudioFormat
+from tau2.data_model.live_config import LiveConfig
 from tau2.data_model.message import (
     AssistantMessage,
     EnvironmentMessage,
@@ -78,7 +79,6 @@ from tau2.data_model.usage import UsageRecord
 from tau2.environment.tool import Tool
 from tau2.utils.utils import get_now
 from tau2.voice.audio_native.adapter import DiscreteTimeAdapter, create_adapter
-from tau2.voice.audio_native.openai.live_config import LiveConfig
 from tau2.voice.audio_native.tick_result import TickResult
 from tau2.voice.pricing import compute_tick_cost
 

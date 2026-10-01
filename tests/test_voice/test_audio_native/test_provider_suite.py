@@ -56,9 +56,9 @@ from typing import List, Optional
 import pytest
 
 from tau2.config import DEFAULT_OPENAI_LIVE_MODEL, TELEPHONY_ULAW_SILENCE
+from tau2.data_model.live_config import LiveConfig
 from tau2.environment.tool import Tool
 from tau2.voice.audio_native.adapter import DiscreteTimeAdapter, create_adapter
-from tau2.voice.audio_native.openai.live_config import LiveConfig
 from tau2.voice.audio_native.tick_result import TickResult
 
 pytestmark = pytest.mark.full_duplex_integration

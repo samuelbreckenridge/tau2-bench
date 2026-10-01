@@ -50,6 +50,7 @@ from tau2.config import (
     DEFAULT_YIELD_THRESHOLD_WHEN_INTERRUPTING_SECONDS,
 )
 from tau2.data_model.audio_effects import EffectTimeline
+from tau2.data_model.live_config import LiveConfig
 from tau2.data_model.message import Message, Tick
 from tau2.data_model.persona import PersonaConfig
 from tau2.data_model.tasks import Action, EnvAssertion, RewardType, Task
@@ -59,7 +60,6 @@ from tau2.environment.environment import EnvironmentInfo
 from tau2.environment.toolkit import ToolType
 from tau2.orchestrator.modes import CommunicationMode
 from tau2.utils.utils import get_now
-from tau2.voice.audio_native.openai.live_config import LiveConfig
 
 SIMULATIONS_DIR = "simulations"
 

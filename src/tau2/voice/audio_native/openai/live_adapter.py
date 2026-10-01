@@ -8,13 +8,13 @@ from pathlib import Path
 
 from tau2.config import DEFAULT_OPENAI_OUTPUT_SAMPLE_RATE
 from tau2.data_model.audio import TELEPHONY_AUDIO_FORMAT, AudioFormat
+from tau2.data_model.live_config import LiveConfig
 from tau2.voice.audio_native.async_loop import BackgroundAsyncLoop
 from tau2.voice.audio_native.audio_converter import StreamingTelephonyConverter
 from tau2.voice.audio_native.openai.discrete_time_adapter import (
     DiscreteTimeOpenAIAdapter,
 )
 from tau2.voice.audio_native.openai.events import AudioDeltaEvent
-from tau2.voice.audio_native.openai.live_config import LiveConfig
 from tau2.voice.audio_native.openai.live_provider import (
     LiveInputTranscriptDelta,
     LiveTranscriptDelta,

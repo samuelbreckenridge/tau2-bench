@@ -28,6 +28,7 @@ from loguru import logger
 
 from tau2.config import DEFAULT_OPENAI_OUTPUT_SAMPLE_RATE
 from tau2.data_model.audio import AudioEncoding, AudioFormat
+from tau2.data_model.live_config import LiveConfig
 from tau2.environment.tool import Tool
 from tau2.voice.audio_native.openai.events import (
     AudioTranscriptDeltaEvent,
@@ -35,7 +36,6 @@ from tau2.voice.audio_native.openai.events import (
     TimeoutEvent,
     parse_realtime_event,
 )
-from tau2.voice.audio_native.openai.live_config import LiveConfig
 from tau2.voice.audio_native.openai.provider import (
     OpenAIRealtimeProvider,
     OpenAIVADConfig,

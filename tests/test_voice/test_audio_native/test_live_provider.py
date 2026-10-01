@@ -12,6 +12,7 @@ from aiortc.sdp import SessionDescription
 
 from tau2.agent.base.streaming import _has_meaningful_content
 from tau2.config import DEFAULT_OPENAI_LIVE_MODEL
+from tau2.data_model.live_config import LiveConfig
 from tau2.data_model.message import AssistantMessage
 from tau2.data_model.simulation import AudioNativeConfig
 from tau2.voice.audio_native.adapter import create_adapter
@@ -24,7 +25,6 @@ from tau2.voice.audio_native.openai.events import (
     FunctionCallArgumentsDoneEvent,
 )
 from tau2.voice.audio_native.openai.live_adapter import DiscreteTimeOpenAILiveAdapter
-from tau2.voice.audio_native.openai.live_config import LiveConfig
 from tau2.voice.audio_native.openai.live_provider import (
     LiveInputTranscriptDelta,
     LiveTranscriptDelta,
